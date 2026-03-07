@@ -16,11 +16,6 @@ const nextConfig = {
   // SEO improvements
   compress: true,
   poweredByHeader: false,
-  redirects: async () => {
-    return [
-      // Redirect old URLs if needed
-    ]
-  },
 }
 
 export default nextConfig
