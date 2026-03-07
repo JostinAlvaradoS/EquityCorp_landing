@@ -30,7 +30,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-start">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center" aria-label="EquityCorp inicio">
           <img
@@ -66,8 +66,8 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 pb-6 pt-2">
-          <nav className="flex flex-col gap-4" aria-label="Navegación móvil">
+        <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border px-6 pb-6 pt-2 flex justify-end">
+          <nav className="flex flex-col gap-4 text-right" aria-label="Navegación móvil">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
