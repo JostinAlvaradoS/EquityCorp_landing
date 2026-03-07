@@ -86,6 +86,10 @@ export function Products() {
                       alt="GPI Logo" 
                       className="max-h-36 w-auto object-contain"
                       style={{ aspectRatio: 'auto' }}
+                      width="522"
+                      height="243"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -131,6 +135,10 @@ export function Products() {
                 src="/gpi.png" 
                 alt="GPI Platform Preview" 
                 className="w-full h-auto rounded-lg shadow-lg object-cover"
+                width="550"
+                height="280"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>

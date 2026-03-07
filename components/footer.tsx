@@ -31,6 +31,9 @@ export function Footer() {
               src="/logo_blanco.png"
               alt="EquityCorp"
               className="h-7 w-auto mb-4"
+              width="299"
+              height="56"
+              style={{ width: '28px', height: 'auto' }}
             />
             <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">
               Tecnología de vanguardia para transformar el sector público latinoamericano.

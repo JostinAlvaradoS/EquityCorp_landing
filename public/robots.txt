@@ -7,6 +7,3 @@ Disallow: /api
 
 # Sitemap
 Sitemap: https://equitycorp.ec/sitemap.xml
-
-# Crawl delay (respetuoso con servidores)
-Crawl-delay: 1

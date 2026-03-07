@@ -36,7 +36,9 @@ export function Navbar() {
           <img
             src="/logo_blanco.png"
             alt="EquityCorp"
-            className="h-8 w-auto brightness-100 invert-0"
+            className="h-10 w-auto brightness-100 invert-0"
+            width="299"
+            height="56"
           />
         </Link>
 

@@ -32,12 +32,20 @@ export function Hero() {
             src="/isotipo2.png" 
             alt="EquityCorp Isotipo - Soluciones GovTech" 
             className="isotipo"
+            width="288"
+            height="288"
+            loading="lazy"
+            decoding="async"
           />
           <div className="vertical-line"></div>
           <img 
             src="/letras2.png" 
             alt="EquityCorp Logo" 
             className="letras"
+            width="649"
+            height="76"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
