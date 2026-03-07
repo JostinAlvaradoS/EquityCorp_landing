@@ -1,0 +1,12 @@
+# robots.txt para EquityCorp
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.next
+Disallow: /api
+
+# Sitemap
+Sitemap: https://equitycorp.ec/sitemap.xml
+
+# Crawl delay (respetuoso con servidores)
+Crawl-delay: 1

@@ -30,13 +30,13 @@ export function Hero() {
           {/* Desktop: isotipo izquierda, letras derecha. Mobile: usa flex-direction para reordenar */}
           <img 
             src="/isotipo2.png" 
-            alt="EquityCorp Isotipo" 
+            alt="EquityCorp Isotipo - Soluciones GovTech" 
             className="isotipo"
           />
           <div className="vertical-line"></div>
           <img 
             src="/letras2.png" 
-            alt="EquityCorp" 
+            alt="EquityCorp Logo" 
             className="letras"
           />
         </div>

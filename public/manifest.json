@@ -1,0 +1,37 @@
+{
+  "name": "EquityCorp - Soluciones GovTech",
+  "short_name": "EquityCorp",
+  "description": "Transformamos el sector público con tecnología de vanguardia. Soluciones GovTech innovadoras para gobiernos latinoamericanos.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#c0392b",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.png",
+      "type": "image/png",
+      "sizes": "1200x630"
+    }
+  ]
+}
