@@ -26,7 +26,8 @@ export function Hero() {
     <section className="hero" id="inicio">
       {/* Logo Animation Container */}
       <div className="logo-anim-container">
-        <div className="hero-logo-group">
+        <div className="hero-logo-group mobile-hero-logo-group">
+          {/* Desktop: isotipo izquierda, letras derecha. Mobile: usa flex-direction para reordenar */}
           <img 
             src="/isotipo2.png" 
             alt="EquityCorp Isotipo" 
@@ -45,8 +46,8 @@ export function Hero() {
       <div className="hero-content-minimal">
         <p className="hero-sub-minimal">Impulsando la transformación digital del estado Ecuatoriano</p>
         <div className="hero-btns">
-          <Link href="#nosotros" className="btn-hero secondary">Sobre nosotros</Link>
-          <Link href="#productos" className="btn-hero primary">Conoce el GPi</Link>
+          <Link href="#about" className="btn-hero secondary">Sobre nosotros</Link>
+          <Link href="#products" className="btn-hero primary">Conoce el GPi</Link>
         </div>
       </div>
 

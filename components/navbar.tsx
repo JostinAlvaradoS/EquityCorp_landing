@@ -5,10 +5,11 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
-  { label: "Soluciones", href: "#solutions" },
+  { label: "Inicio", href: "#" },
   { label: "Productos", href: "#products" },
   { label: "Servicios", href: "#services" },
   { label: "Nosotros", href: "#about" },
+  { label: "Contacto", href: "#contact" },
 ]
 
 export function Navbar() {
@@ -29,7 +30,7 @@ export function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-start">
         {/* Logo */}
         <Link href="/" className="flex items-center" aria-label="EquityCorp inicio">
           <img
@@ -40,7 +41,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-8" aria-label="Navegación principal">
+        <nav className="hidden md:flex items-center gap-8 ml-auto" aria-label="Navegación principal">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -51,22 +52,6 @@ export function Navbar() {
             </Link>
           ))}
         </nav>
-
-        {/* CTA */}
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="#contact"
-            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            Contacto
-          </Link>
-          <Link
-            href="#contact"
-            className="inline-flex items-center px-4 py-2 text-sm font-semibold bg-primary text-primary-foreground rounded-md hover:bg-brand-red-light transition-colors duration-200"
-          >
-            Solicitar demo
-          </Link>
-        </div>
 
         {/* Mobile menu button */}
         <button
@@ -93,13 +78,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="#contact"
-              className="inline-flex items-center justify-center px-4 py-2.5 text-sm font-semibold bg-primary text-primary-foreground rounded-md mt-2"
-              onClick={() => setMobileOpen(false)}
-            >
-              Solicitar demo
-            </Link>
           </nav>
         </div>
       )}

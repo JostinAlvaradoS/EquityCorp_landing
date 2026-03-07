@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { FacebookIcon, LinkedinIcon } from "lucide-react"
 
 const footerLinks = {
   Compañía: [
@@ -63,14 +64,23 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-border flex items-center justify-between">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} EquityCorp. Todos los derechos reservados.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Construido con propósito para el{" "}
-            <span className="text-primary font-medium">sector público</span>.
-          </p>
+          <div className="flex items-center gap-4">
+            <Link href="https://www.linkedin.com/company/equitycorp" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <LinkedinIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+            </Link>
+            <Link href="https://x.com/equitycorp" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <svg className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5 3H21L13.5 11L21 21H17.5L12 14.5L6.5 21H3L10.5 13L3 3H6.5L12 9.5L17.5 3Z" fill="currentColor" />
+              </svg>
+            </Link>
+            <Link href="https://facebook.com/equitycorp" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FacebookIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

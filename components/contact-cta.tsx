@@ -44,13 +44,13 @@ export function ContactCTA() {
                 <div className="w-8 h-8 rounded-md bg-surface-2 flex items-center justify-center shrink-0">
                   <Mail size={14} className="text-primary" />
                 </div>
-                <span className="text-sm text-muted-foreground">contacto@equitycorp.co</span>
+                <span className="text-sm text-muted-foreground">contacto@equitycorp.com.ec</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-md bg-surface-2 flex items-center justify-center shrink-0">
                   <MapPin size={14} className="text-primary" />
                 </div>
-                <span className="text-sm text-muted-foreground">Colombia · Latam</span>
+                <span className="text-sm text-muted-foreground">Ecuador · Latam</span>
               </div>
             </div>
           </div>

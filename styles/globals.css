@@ -1,3 +1,14 @@
+/* Hero isotipo animation for mobile */
+@media (min-width: 641px) {
+  .isotipo.animate-mobile-up {
+    animation: isotipo-left 1.2s cubic-bezier(0.4,0,0.2,1) !important;
+  }
+}
+
+@keyframes isotipo-left {
+  0% { transform: translateX(-60px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
 @import 'tailwindcss';
 @import 'tw-animate-css';
 

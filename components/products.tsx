@@ -84,7 +84,8 @@ export function Products() {
                     <img 
                       src="/gpi_logo.png" 
                       alt="GPI Logo" 
-                      className="h-35 w-auto"
+                      className="max-h-36 w-auto object-contain"
+                      style={{ aspectRatio: 'auto' }}
                     />
                   </div>
                 </div>
