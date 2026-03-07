@@ -1,9 +1,0 @@
-# robots.txt para EquityCorp
-User-agent: *
-Allow: /
-Disallow: /admin
-Disallow: /.next
-Disallow: /api
-
-# Sitemap
-Sitemap: https://equitycorp.ec/sitemap.xml

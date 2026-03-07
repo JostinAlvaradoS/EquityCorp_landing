@@ -1,10 +1,13 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 
 export function Hero() {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
+    setMounted(true);
     // Scroll reveal para .reveal
     const ro = new IntersectionObserver((entries) => {
       entries.forEach((e, i) => {
@@ -24,6 +27,22 @@ export function Hero() {
 
   return (
     <section className="hero" id="inicio">
+      {/* Watermark brand image */}
+      {!mounted ? (
+        <img 
+          src="/marca_agua.png" 
+          alt="" 
+          className="hero-watermark"
+          aria-hidden="true"
+        />
+      ) : (
+        <img 
+          src="/marca_agua2.png" 
+          alt="" 
+          className="hero-watermark"
+          aria-hidden="true"
+        />
+      )}
       {/* Logo Animation Container */}
       <div className="logo-anim-container">
         <div className="hero-logo-group mobile-hero-logo-group">
@@ -38,15 +57,27 @@ export function Hero() {
             decoding="async"
           />
           <div className="vertical-line"></div>
-          <img 
-            src="/letras2.png" 
-            alt="EquityCorp Logo" 
-            className="letras"
-            width="649"
-            height="76"
-            loading="lazy"
-            decoding="async"
-          />
+          {!mounted ? (
+            <img 
+              src="/letras2.png" 
+              alt="EquityCorp Logo" 
+              className="letras"
+              width="649"
+              height="76"
+              loading="lazy"
+              decoding="async"
+            />
+          ) : (
+            <img 
+              src="/letras3.png" 
+              alt="EquityCorp Logo" 
+              className="letras"
+              width="649"
+              height="76"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
         </div>
       </div>
 

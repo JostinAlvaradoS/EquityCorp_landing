@@ -131,6 +131,21 @@
   background: var(--background);
 }
 
+.hero-watermark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: clamp(300px, 65vw, 1000px);
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  filter: contrast(0.8) grayscale(1);
+}
+
 .logo-anim-container {
   display: flex;
   align-items: center;
